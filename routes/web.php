@@ -22,3 +22,4 @@ Route::get('/dsa', function () {
 //微信
 Route::get('weixin/xiaoxi', 'WeixinController@xiaoxi');
 Route::post('weixin/xiaoxi', 'WeixinController@xiaoxi');
+Route::any('weixin/api', 'WeixinController@api');
