@@ -14,12 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/dsa', function () {
-    return view('welcome');
-});
-
-//微信
-Route::get('weixin/xiaoxi', 'WeixinController@xiaoxi');
-Route::post('weixin/xiaoxi', 'WeixinController@xiaoxi');
-Route::any('weixin/api', 'WeixinController@api');
